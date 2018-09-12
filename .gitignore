@@ -1,0 +1,35 @@
+# OSX
+.DS_Store
+
+# node.js
+node_modules/
+npm-debug.log
+.next
+
+# dist
+dist/
+out/
+public
+routes.js
+server.js
+storybook-static/
+
+# VSCode
+.vscode
+
+# Etc
+*.log
+.vscode/
+.envs/
+.backups/
+.env
+coverage
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+!.elasticbeanstalk/config.yml
+
+*.js.map
+src/**/*.js
