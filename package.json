@@ -8,7 +8,7 @@
     "build:next": "next build src",
     "build:storybook": "build-storybook",
     "clean": "rm -rf src/.next",
-    "compile:micro": "tsc -p tsconfig-server.json",
+    "compile:micro": "tsc -p tsconfig.json",
     "lint": "tslint {src,__tests__}/**/*.{ts,tsx}",
     "prepush": "npm run lint",
     "prestart": "npm run build:next && npm run compile:micro",
