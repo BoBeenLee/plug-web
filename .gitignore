@@ -33,3 +33,4 @@ coverage
 
 *.js.map
 src/**/*.js
+/out*
