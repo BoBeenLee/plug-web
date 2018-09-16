@@ -8,8 +8,8 @@ const Container = styled.div`
   width: 360px;
 `;
 
-storiesOf("Button", module)
+storiesOf("Logo", module)
     .addDecorator(storyFunc => <Container>{storyFunc()}</Container>)
-    .add("Logo", () => (
+    .add("Primary Logo", () => (
         <Logo />
     ));
