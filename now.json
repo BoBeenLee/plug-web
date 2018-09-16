@@ -1,0 +1,5 @@
+{
+    "type": "docker",
+    "name": "plug-web",
+    "alias": "plug-web.now.sh"
+}

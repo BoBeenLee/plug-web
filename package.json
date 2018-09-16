@@ -12,10 +12,11 @@
     "lint": "tslint {src,__tests__}/**/*.{ts,tsx}",
     "prepush": "npm run lint",
     "prestart": "npm run build:next && npm run compile:micro",
-    "start": "micro server.js -l tcp://127.0.0.1:${PORT-8081}",
+    "start": "micro server.js -l tcp://127.0.0.1:${PORT-8082}",
     "start:dev": "npm run compile:micro && micro-dev server.js --ignore ./src",
     "start:storybook": "start-storybook -p 6006",
     "deploy:storybook": "storybook-to-ghpages",
+    "now:dev": "now && now alias",
     "test": "jest"
   },
   "author": "plug",
