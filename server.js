@@ -1,7 +1,7 @@
-import LRUCache from "lru-cache";
-import { send, sendError } from "micro";
-import next from "next";
-import routers from "./routes";
+const LRUCache = require("lru-cache");
+const { send, sendError } = require("micro");
+const next = require("next");
+const routers = require("./routes");
 
 const dev = process.env.NODE_ENV !== "production";
 const baseDir = "src";
@@ -16,7 +16,7 @@ const getCacheKey = req => {
 
 const main = routers.getRequestHandler(
   app,
-  async ({ req, res, route, query }: any) => {
+  async ({ req, res, route, query }) => {
     const cacheKey = getCacheKey(req);
 
     if (ssrCache.has(cacheKey)) {

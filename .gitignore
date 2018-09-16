@@ -10,8 +10,6 @@ npm-debug.log
 dist/
 out/
 public
-routes.js
-server.js
 storybook-static/
 
 # VSCode
