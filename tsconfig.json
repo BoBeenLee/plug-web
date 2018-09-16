@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "plug-images": [
-        "src/assets/images"
+        "./src/assets/images"
       ]
     },
     "esModuleInterop": true,

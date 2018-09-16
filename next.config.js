@@ -3,7 +3,7 @@ module.exports = withTypescript({
   webpack(config, options) {
     // Further custom configuration here
     config.module.rules.push({
-      test: /\.(png|jpg|gif)$/,
+      test: /\.(png|jpg|gif|svg)$/,
       loader: "url-loader",
       options: {
         limit: 10000,
