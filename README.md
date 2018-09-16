@@ -1,5 +1,10 @@
 # Plug Web
 
+## Install
+```
+yarn install
+```
+
 ## Run
 
 ### Storybook
