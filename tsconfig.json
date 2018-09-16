@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "src/",
+    "baseUrl": ".",
+    "paths": {
+      "plug-images": [
+        "src/assets/images"
+      ]
+    },
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "importHelpers": true,

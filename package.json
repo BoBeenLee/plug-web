@@ -5,7 +5,7 @@
   "main": "index.tsx",
   "scripts": {
     "build:tsc": "tsc --noEmit",
-    "build:next": "next build src",
+    "build:next": "next build ./src",
     "build:storybook": "build-storybook",
     "clean": "rm -rf src/.next",
     "compile:micro": "tsc -p tsconfig.json",
@@ -63,6 +63,7 @@
     "@types/storybook__react": "^3.0.7",
     "awesome-typescript-loader": "3.3.0",
     "babel-core": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.1.1",
     "babel-runtime": "^6.26.0",
     "husky": "^0.14.3",
     "jest": "^22.4.3",

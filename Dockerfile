@@ -12,4 +12,4 @@ RUN yarn
 COPY . .
 
 # Build the app and export the static files to the `public` directory
-RUN PORT=80 yarn start
+RUN PORT=443 yarn start
