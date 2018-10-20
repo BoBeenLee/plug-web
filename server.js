@@ -1,10 +1,13 @@
 const LRUCache = require("lru-cache");
 const { send, sendError } = require("micro");
 const next = require("next");
+
 const routers = require("./routes");
+require(`./dotenv`);
 
 const dev = process.env.NODE_ENV !== "production";
 const baseDir = "src";
+
 const app = next({ dev, dir: baseDir });
 const ssrCache = new LRUCache({
   max: 100,

@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import Logo from "../components/Logo";
 
+import env from "../configs/environment";
+
 const Container = styled.div``;
 
 export default class Index extends React.Component {
@@ -11,6 +13,7 @@ export default class Index extends React.Component {
             <Container>
                 <Logo />
                 <div>Hello World</div>
+                {env.API_ENDPOINT}
             </Container>
         );
     }
