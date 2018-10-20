@@ -1,4 +1,4 @@
-import Document, { Context, Head, Main, NextScript } from "next/document";
+import Document, { Head, Main, NextScript } from "next/document";
 import React from "react";
 import { ServerStyleSheet } from "styled-components";
 import { injectGlobal } from "styled-components";
@@ -39,11 +39,11 @@ injectGlobal`
   }
 `;
 
-export default class MyDocument extends Document {
-  public static getInitialProps(context: Context) {
+export default class MyDocument extends Document<any> {
+  public static getInitialProps(context) {
     const sheet = new ServerStyleSheet();
     const page = context.renderPage(
-      (App:any) => (props: any) =>
+      (App: any) => (props: any) =>
         sheet.collectStyles(<App {...props} />)
     );
     const styleTags = sheet.getStyleElement();
