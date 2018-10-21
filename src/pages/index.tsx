@@ -12,8 +12,8 @@ export default class Index extends React.Component {
         return (
             <Container>
                 <Logo />
-                <div>Hello World</div>
-                {env.API_ENDPOINT}
+                hello world
+                <div>Hello World{env.NODE_ENV}</div>
             </Container>
         );
     }
