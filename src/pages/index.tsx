@@ -9,7 +9,6 @@ const Container = styled.div``;
 
 export default class Index extends React.Component {
     public render() {
-        console.log(env.NODE_ENV);
         return (
             <Container>
                 <Logo />
