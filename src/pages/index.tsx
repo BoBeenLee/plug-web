@@ -12,6 +12,7 @@ export default class Index extends React.Component {
         return (
             <Container>
                 <Logo />
+                hello world
                 <div>Hello World{env.NODE_ENV}</div>
             </Container>
         );
