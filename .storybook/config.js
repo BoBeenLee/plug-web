@@ -12,24 +12,24 @@ injectGlobal`
   }
 
   h1 {
-  font-weight: bold;
-  font-size: 48px;
-  text-align: left;
-  margin: 0 0 12px 0;
-}
+    font-weight: bold;
+    font-size: 48px;
+    text-align: left;
+    margin: 0 0 12px 0;
+  }
 
-h2 {
-  font-weight: 300;
-  font-size: 36px;
-}
+  h2 {
+    font-weight: 300;
+    font-size: 36px;
+  }
 
-h3 {
-  font-weight: 300;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 27px;
-  margin: 0;
-}
+  h3 {
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin: 0;
+  }
 
   html, body, #root {
     height: 100%;

@@ -30,7 +30,7 @@ const InviteButton = styled(PWButton)`
 `;
 
 
-class Header extends Component {
+class PWHeader extends Component {
     public render() {
         return (
             <Container>
@@ -43,4 +43,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default PWHeader;
