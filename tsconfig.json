@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
+    "target": "es2015",
     "paths": {
       "plug-images": [
         "./src/assets/images"

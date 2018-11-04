@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="77px" viewBox="0 0 90 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>custom / app-icon / blue@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M27.8640584,42.8052621 L22.7388639,48.0390663 C22.5929183,48.1881048 22.3931081,48.2720987 22.1845113,48.2720987 C21.756004,48.2720987 21.4086301,47.9247248 21.4086301,47.4962174 L21.4086301,42.8052621 L21.369697,42.8052621 C12.0377583,42.8052621 4.47272727,35.0799178 4.47272727,25.5502227 C4.47272727,16.0205277 12.0377583,8.29518341 21.369697,8.29518341 L38.2666667,8.29518341 C47.5986053,8.29518341 55.1636364,16.0205277 55.1636364,25.5502227 C55.1636364,35.0799178 47.5986053,42.8052621 38.2666667,42.8052621 L27.8640584,42.8052621 Z" id="path-1"></path>
+        <filter x="-49.0%" y="-62.1%" width="198.0%" height="224.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="8.27606679" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Extra-large:-Desktops---12-col" transform="translate(-150.000000, -28.000000)">
+            <g id="Header">
+                <g id="Logo" transform="translate(165.000000, 40.000000)">
+                    <g id="Icons/-ic_appicon_primary">
+                        <g id="app-icon-/-blue">
+                            <g id="Combined-Shape-image-shadow" opacity="0.5" filter="url(#filter-2)">
+                                <use fill="#1F6AF7" xlink:href="#path-1"></use>
+                                <use fill-opacity="0.2" fill="#000000" xlink:href="#path-1"></use>
+                            </g>
+                            <path d="M27.5192131,40.6000925 L21.4895726,46.7575093 C21.3178717,46.9328487 21.082801,47.031665 20.837393,47.031665 C20.3332667,47.031665 19.9245915,46.6229899 19.9245915,46.1188636 L19.9245915,40.6000925 L19.8787879,40.6000925 C8.90003649,40.6000925 0,31.5114522 0,20.3000463 C0,9.08864029 8.90003649,0 19.8787879,0 L39.7575758,0 C50.7363271,0 59.6363636,9.08864029 59.6363636,20.3000463 C59.6363636,31.5114522 50.7363271,40.6000925 39.7575758,40.6000925 L27.5192131,40.6000925 Z" id="Combined-Shape" fill="#3867D6"></path>
+                            <ellipse id="Oval" fill="#FFFFFF" cx="19.9804697" cy="20.2781777" rx="3.9655894" ry="4.05563553"></ellipse>
+                            <ellipse id="Oval-Copy-2" fill="#FFFFFF" cx="39.8084166" cy="20.2781777" rx="3.9655894" ry="4.05563553"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
