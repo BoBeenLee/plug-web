@@ -22,6 +22,10 @@ const PrimaryButton = styled.button`
   border-radius: 4px;
   height: 50px;
   margin: 0;
+  &:hover {
+    box-shadow: 0 3px 20px 2px rgba(107,107,107,0.5);
+    transform: scale(1.05, 1.05);
+  }
 `;
 
 const SecondaryButton = styled.button`
@@ -37,7 +41,11 @@ const SecondaryButton = styled.button`
   border-radius: 4px;
   height: 50px;
   margin: 0;
-`;
+  &:hover {
+    box-shadow: 0 3px 20px 2px rgba(107,107,107,0.5);
+    transform: scale(1.05, 1.05);
+    }
+  `;
 
 const BUTTON_TYPE_COMPONENT_MAP = new Map<ButtonType, React.ReactNode>()
     .set("primary", PrimaryButton)

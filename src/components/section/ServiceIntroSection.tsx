@@ -1,7 +1,6 @@
 import Image from "plug-images";
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
 import { PWButton } from '../button';
 
 const Container = styled.section`
@@ -35,7 +34,7 @@ class Body extends Component {
         return (
             <Container>
                 <Content>
-                    <h1>학부모와 선생님의<br /> 올바른 소통, 플러그</h1>
+                    <h1>플러그, <br/> 학부모와 선생님을 <br/>새롭게 연결합니다.</h1>
                     <h3>언제 어디서나, 1년 365일, 몇 명과 함께하든 무료입니다. <br />가입과 로그인 없이 전화번호만 있으면 실시간 그룹채팅 및</h3>
                     <ButtonView>
                         <IOSButtonView>
@@ -48,7 +47,7 @@ class Body extends Component {
                             label={"안드로이드 다운로드"} />
                     </ButtonView>
                 </Content>
-                <img src={Image.service_intro_screenshot} alt="" height="500" width="300" />
+                <img src={Image.logo} alt="" height="500" width="300" />
             </Container>
 
         );

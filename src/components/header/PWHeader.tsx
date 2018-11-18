@@ -4,13 +4,16 @@ import styled from 'styled-components';
 
 import { PWButton } from '../button';
 
+
 const Container = styled.header`
+    position: fixed;
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding: 10px 0;
     margin: auto;
     width: 100%;
-    padding: 10px 0;
+    z-index: 100;
+    background-color: white;
     box-shadow: 0px 2px 4px 0px rgba(0,0,68,.1);
 `;
 
@@ -19,7 +22,7 @@ const AppLogo = styled.img`
 `;
 
 const Content = styled.div`
-        width: 1100px;
+    width: 1100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +33,10 @@ const InviteButton = styled(PWButton)`
 `;
 
 
+
 class PWHeader extends Component {
+
+
     public render() {
         return (
             <Container>

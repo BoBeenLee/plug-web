@@ -5,9 +5,12 @@ import { injectGlobal } from "styled-components";
 
 // tslint:disable-next-line:no-unused-expression
 injectGlobal`
+  
   @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+  
   * { 
-    font-family: 'Spoqa Han Sans', 'Sans-serif'; color: #4A4A4A;
+    font-family: SpoqaHanSans;
+    color: #4A4A4A;
   }
 
   h1 {
@@ -15,6 +18,8 @@ injectGlobal`
     font-size: 48px;
     text-align: left;
     margin: 0 0 12px 0;
+    letter-spacing: 1.2px;
+    line-height: 62px;
   }
 
   h2 {
