@@ -6,19 +6,15 @@ import { PWButton } from '../button';
 
 
 const Container = styled.header`
-    position: fixed;
+    /* position: fixed; */
+    top: 0;
     display: flex;
     justify-content: center;
     padding: 10px 0;
     margin: auto;
     width: 100%;
-    z-index: 100;
     background-color: white;
     box-shadow: 0px 2px 4px 0px rgba(0,0,68,.1);
-`;
-
-const AppLogo = styled.img`
-    height: 80px;
 `;
 
 const Content = styled.div`
@@ -27,6 +23,12 @@ const Content = styled.div`
     align-items: center;
     justify-content: space-between;
 `;
+
+const AppLogo = styled.img`
+    height: 80px;
+`;
+
+
 
 const InviteButton = styled(PWButton)`
     margin-right: 10px;

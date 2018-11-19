@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { PWButton } from '../button';
 
+
 const Container = styled.section`
     display: flex;
     align-items: center;
@@ -14,7 +15,7 @@ const Container = styled.section`
 `;
 
 const Content = styled.div`
-      display: flex;
+    display: flex;
     width: 445px;
     margin-right: 125px;
     flex-direction: column;
@@ -28,6 +29,7 @@ const ButtonView = styled.div`
 const IOSButtonView = styled.div`
     margin-right: 18px;
 `;
+
 
 class Body extends Component {
     public render() {
@@ -47,7 +49,7 @@ class Body extends Component {
                             label={"안드로이드 다운로드"} />
                     </ButtonView>
                 </Content>
-                <img src={Image.logo} alt="" height="500" width="300" />
+                <img src={Image.app_mockup} alt="Mockup_image" />
             </Container>
 
         );
