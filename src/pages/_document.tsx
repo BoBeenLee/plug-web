@@ -23,13 +23,13 @@ injectGlobal`
   }
 
   h2 {
-    font-weight: 300;
-    font-size: 36px;
+    font-weight: bold;
+    font-size: 32px;
   }
 
   h3 {
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 24px;
     letter-spacing: 0;
     line-height: 27px;
     margin: 0;

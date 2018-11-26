@@ -1,49 +1,97 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Image from "plug-images";
+import images from 'plug-images';
 
 const Container = styled.section`
     display: flex;
-    max-width: 1100px;
+    max-width: 100%;
     margin: auto;
     flex-direction: column;
-    border-bottom: 1px solid #DFDFDF;
+    justify-content: center;
 `;
 
 
-const ContentArea = styled.div`
+const ContentHeader = styled.div`
+    background-color: #F9F9F9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+
+`
+
+const ContentArea = styled.div` 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 42px 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 `;
+
+const ContentLeft = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1045px;
+    margin: 80px auto;
+`
+
+const UserReview = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+`
+
+const UserInfo = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+const UserName = styled.h3`
+    margin-left: 16px;
+`
 
 const ContentText = styled.p`
-    width: 280px;
-    overflow: hidden;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 40px 0px;
 `;
+
+const ContentRight = styled.div`
+`
+
+
 
 class Body2 extends Component {
     public render() {
         return (
             <Container>
-                <h2>플러그로 달라지는 연결</h2>    
-                <h3>언제 어디서나, 1년 365일, 몇 명과 함께하든ㅋㅋ 무료입니다. 가입과 로그인 없이 전화번호만 있으면<br/>실시간 그룹채팅 및 언제 어디서나, 1년 365일, 몇 명과 함께하든 무료입니다. 가입과 로그인 없이 전화번호만 켜놓고 갈거야???.</h3>
+{/* ContentHeader */}
+                <ContentHeader><h2>플러그로 달라진 연결을 경험해보세요. </h2></ContentHeader> 
+{/* ContentArea */}
                 <ContentArea>
+
+                    <ContentLeft>
+                        <img src={images.function_1} alt="" width="345" height="291" />
+                        <UserReview>
+                            <UserInfo>
+                                <img src={images.avatar_parents} alt="" width="56" height="56" />
+                                <UserName>학부모님</UserName>
+                            </UserInfo>
+                            <ContentText>"늦은 밤 선생님께 보내는 메시지,<br/> 눈치보지 않고 예약 메시지를<br/> 보낼 수 있었어요."</ContentText>
+                        </UserReview>
+                    </ContentLeft>
+                    <ContentRight>
                     <div>
                         <img src="https://via.placeholder.com/150" alt="" width="280" height="215" />
                         <h4>좋아요</h4>
                         <ContentText>수업과 평가에 활용할 수 있는 12만개가 넘는 콘텐츠를 제공하며 원클릭으로 학기 말 성적</ContentText>
                     </div>
-                    <div>
+                    </ContentRight>
+                    <ContentLeft>
                         <img src="https://via.placeholder.com/150" alt="" width="280" height="215" />
                         <h4>좋아요</h4>
                         <ContentText>수업과 평가에 활용할 수 있는 12만개가 넘는 콘텐츠를 제공하며 원클릭으로 학기 말 성적</ContentText>
-                    </div>
-                    <div>
-                        <img src="https://via.placeholder.com/150" alt="" width="280" height="215" />
-                        <h4>좋아요</h4>
-                        <ContentText>수업과 평가에 활용할 수 있는 12만개가 넘는 콘텐츠를 제공하며 원클릭으로 학기 말 성적</ContentText>
-                    </div>
+                    </ContentLeft>
+
                 </ContentArea>
               
             </Container>
