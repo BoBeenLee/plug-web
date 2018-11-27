@@ -11,7 +11,6 @@ const Container = styled.section`
     margin: auto;
     max-width: 1100px;
     height: 700px;
-    border-bottom: 1px solid #DFDFDF;
 `;
 
 const Content = styled.div`
@@ -20,7 +19,7 @@ const Content = styled.div`
 
 const BlueSpan = styled.span`
     color: #3867D6;
-    `
+`
 
 
 

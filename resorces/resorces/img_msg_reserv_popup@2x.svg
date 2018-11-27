@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="291px" viewBox="0 0 345 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>resorces/img_msg_reserv_popup@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-6.7%" y="-7.9%" width="113.3%" height="115.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.73735119   0 0 0 0 0.73735119   0 0 0 0 0.73735119  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="resorces/img_msg_reserv_popup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="img_msg_reserv_popup" filter="url(#filter-1)">
+            <rect id="BG" stroke="#DEE0E5" stroke-width="3" fill="#FFFFFF" x="1.5" y="1.5" width="342" height="288" rx="8"></rect>
+            <text id="메시지-예약-안내" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-size="22" font-weight="bold" fill="#4A4A4A">
+                <tspan x="97" y="128">메시지 예약 안내</tspan>
+            </text>
+            <text id="선생님의-근무-시작시간에-맞춰-메시지" font-family="SpoqaHanSans-Regular, SpoqaHanSans" font-size="18" font-weight="normal" fill="#4A4A4A">
+                <tspan x="59.812" y="163">선생님의 근무 시작시간에 맞춰</tspan>
+                <tspan x="44.998" y="185">메시지 전송 예약을 할 수 있습니다.</tspan>
+            </text>
+            <g id="ic_delay" transform="translate(147.000000, 31.000000)" stroke="#DFE1E6" stroke-width="4.35483871">
+                <path d="M21.7741935,3.08285462 L26.5645161,3.08285462 L26.5645161,11.7465626 L24.5965921,11.9367843 C11.9359572,13.1605749 2.17741935,23.912188 2.17741935,36.8219178 C2.17741935,50.6325953 13.2940832,61.8225806 27,61.8225806 C40.7059168,61.8225806 51.8225806,50.6325953 51.8225806,36.8219178 C51.8225806,31.0327463 49.8656298,25.5515802 46.3334601,21.1402514 L44.9423897,19.4029427 L46.7097259,18.0502264 C46.7254138,18.0382189 46.7406715,18.0248128 46.7555308,18.0098555 L48.6212818,16.1317987 C48.7900015,15.9619662 48.7900015,15.6877917 48.6212818,15.5179592 L48.6031324,15.4996901 C48.6021423,15.4986956 48.6021423,15.4986956 48.6011478,15.4977055 C48.4338712,15.3315249 48.1635508,15.3324135 47.9973702,15.4996901 L46.1316193,17.3777469 C46.1201024,17.3893397 46.1095014,17.4011653 46.0997466,17.4132363 L44.696995,19.1490593 L42.9962762,17.7039472 C39.165543,14.4489478 34.4511473,12.4247042 29.4034079,11.9367843 L27.4354839,11.7465626 L27.4354839,3.08285462 L32.2258065,3.08285462 C32.4663176,3.08285462 32.6612903,2.88788185 32.6612903,2.64737075 L32.6612903,2.61290323 C32.6612903,2.37239213 32.4663176,2.17741935 32.2258065,2.17741935 L21.7741935,2.17741935 C21.5336824,2.17741935 21.3387097,2.37239213 21.3387097,2.61290323 L21.3387097,2.64737075 C21.3387097,2.88788185 21.5336824,3.08285462 21.7741935,3.08285462 Z" id="Combined-Shape"></path>
+                <rect id="Rectangle" x="26.5645161" y="18.8349536" width="1" height="15.8095449" rx="0.5"></rect>
+            </g>
+            <text id="바로-보내기" font-family="SpoqaHanSans-Regular, SpoqaHanSans" font-size="18" font-weight="normal" fill="#4A4A4A">
+                <tspan x="43" y="260">바로 보내기</tspan>
+            </text>
+            <text id="예약-하기" font-family="SpoqaHanSans-Bold, SpoqaHanSans" font-size="22" font-weight="bold" fill="#4A4A4A">
+                <tspan x="215" y="260">예약 하기</tspan>
+            </text>
+            <rect id="Rectangle" fill="#DEE0E5" x="0" y="216" width="345" height="3"></rect>
+            <rect id="Rectangle-Copy-3" fill="#DEE0E5" x="171" y="217" width="3" height="73"></rect>
+        </g>
+    </g>
+</svg>
