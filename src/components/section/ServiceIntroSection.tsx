@@ -50,7 +50,7 @@ class Body extends Component {
                 <Content>
                     <h1><BlueSpan>플러그,</BlueSpan> <br/> 학부모와 교사를 <br/>새롭게 연결합니다.</h1>
                 </Content>
-                <MainImg src={Image.app_mockup} alt="App Image"></MainImg>
+                <MainImg src={Image.app_mockup} alt="App Image" />
             </Container>
 
         );
