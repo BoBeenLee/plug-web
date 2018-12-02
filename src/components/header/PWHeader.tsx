@@ -2,6 +2,8 @@ import Image from "plug-images";
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+
+import { Router } from "../../../routes";
 import { PWButton } from '../button';
 
 const Container = styled.header`
@@ -41,7 +43,7 @@ class PWHeader extends Component {
     }
 
     private navigateToServiceManual = () => {
-        // NOTHING
+        Router.pushRoute('/service/manual');
     }
 
     private navigateToGuideDownload = () => {

@@ -27,7 +27,7 @@ const main = routers.getRequestHandler(
       return send(res, 200, ssrCache.get(cacheKey));
     }
     try {
-      const html = await app.render(req, res, route.page, query);
+      const html = await app.renderToHTML(req, res, route.page, query);
       ssrCache.set(cacheKey, html);
       return send(res, 200, html);
     } catch (err) {
