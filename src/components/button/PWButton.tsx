@@ -7,7 +7,8 @@ type ButtonType = "primary" | "secondary" | "list";
 interface IProps {
     classNames?: string;
     label: string;
-    type: ButtonType
+    type: ButtonType;
+    onClick?: () => void;
 }
 
 const PrimaryButton = styled.button`
@@ -47,7 +48,7 @@ const SecondaryButton = styled.button`
     }
   `;
 
-  const ListButton = styled.li`
+const ListButton = styled.li`
     all: unset;
     font-size: 16px;
     color: #3867D6;
@@ -68,10 +69,10 @@ const BUTTON_TYPE_COMPONENT_MAP = new Map<ButtonType, React.ReactNode>()
 
 export class PWButton extends Component<IProps> {
     public render() {
-        const { classNames, type, label } = this.props;
+        const { classNames, type, label, onClick } = this.props;
         const TargetComponent: any = BUTTON_TYPE_COMPONENT_MAP.get(type);
         return (
-            <TargetComponent className={classNames}>{label}</TargetComponent>
+            <TargetComponent className={classNames} onClick={onClick}>{label}</TargetComponent>
         );
     }
 }

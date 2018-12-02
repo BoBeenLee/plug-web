@@ -1,14 +1,13 @@
 const Routes = require("next-routes");
 
-const routers = new Routes().add({
-  name: "Hello",
-  page: "hello",
-  pattern: "/hello"
-},
-{
-  name: "About",
-  page: "About",
-  pattern: "/about"
-});
+const routers = new Routes()
+  .add({
+    name: "about",
+    pattern: "/about"
+  })
+  .add({
+    name: "serviceManual",
+    pattern: "/service/manual"
+  });
 
 module.exports = routers;

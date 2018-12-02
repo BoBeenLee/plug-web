@@ -1,8 +1,10 @@
 import Image from "plug-images";
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { PWButton } from '../button';
 
+
+import { Router } from "../../../routes";
+import { PWButton } from '../button';
 
 const Container = styled.header`
     top: 0;
@@ -33,11 +35,19 @@ class PWHeader extends Component {
             <Container>
                 <AppLogo src={Image.logo} className="App-logo" alt="logo" />
                 <Content>
-                    <PWButton type="list" label={"이용방법"} />
-                    <PWButton type="list" label={"안내문 받기"} />
+                    <PWButton type="list" label={"이용방법"} onClick={this.navigateToServiceManual} />
+                    <PWButton type="list" label={"안내문 받기"} onClick={this.navigateToGuideDownload} />
                 </Content>
             </Container>
         );
+    }
+
+    private navigateToServiceManual = () => {
+        Router.pushRoute('/service/manual');
+    }
+
+    private navigateToGuideDownload = () => {
+        // NOTHING
     }
 }
 

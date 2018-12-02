@@ -3,6 +3,7 @@ const { send, sendError } = require("micro");
 const next = require("next");
 
 const routers = require("./routes");
+
 require(`./dotenv`);
 
 const dev = process.env.NODE_ENV !== "production";
@@ -25,7 +26,6 @@ const main = routers.getRequestHandler(
     if (ssrCache.has(cacheKey)) {
       return send(res, 200, ssrCache.get(cacheKey));
     }
-
     try {
       const html = await app.renderToHTML(req, res, route.page, query);
       ssrCache.set(cacheKey, html);
