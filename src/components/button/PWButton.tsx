@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 
-type ButtonType = "primary" | "secondary" | "list";
+type ButtonType = "primary" | "secondary";
 
 interface IProps {
     classNames?: string;
@@ -47,24 +47,9 @@ const SecondaryButton = styled.button`
     }
   `;
 
-  const ListButton = styled.li`
-    all: unset;
-    font-size: 16px;
-    color: #3867D6;
-    cursor: pointer;
-    margin-left:40px;
-    &:hover{
-        transform: scale(1.05, 1.05);
-    }
-    &:active{
-        font-weight: 600;
-    }
-  `
-
 const BUTTON_TYPE_COMPONENT_MAP = new Map<ButtonType, React.ReactNode>()
     .set("primary", PrimaryButton)
-    .set("secondary", SecondaryButton)
-    .set("list", ListButton);
+    .set("secondary", SecondaryButton);
 
 export class PWButton extends Component<IProps> {
     public render() {

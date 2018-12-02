@@ -20,31 +20,19 @@ injectGlobal`
     margin: 0 0 12px 0;
     letter-spacing: 1.2px;
     line-height: 62px;
-    @media (min-width: 320px) and (max-width: 480px) {
-      font-size: 32px;
-      line-height: 42px;
-    }
   }
 
   h2 {
-    font-weight: bold;
-    font-size: 32px;
-    @media (min-width: 320px) and (max-width: 480px) {
-      font-size: 22px;
-      line-height: 32px;
-    }
+    font-weight: 300;
+    font-size: 36px;
   }
 
   h3 {
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 18px;
     letter-spacing: 0;
     line-height: 27px;
     margin: 0;
-    @media (min-width: 320px) and (max-width: 480px) {
-      font-size: 18px;
-      line-height: 28px;
-    }
   }
 
   html, body {

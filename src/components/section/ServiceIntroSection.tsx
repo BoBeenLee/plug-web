@@ -1,56 +1,53 @@
 import Image from "plug-images";
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
-
+import { PWButton } from '../button';
 
 const Container = styled.section`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
     max-width: 1100px;
-    height: 700px;
-    /* Mobile Device */
-    @media (min-width: 320px) and (max-width: 480px) {
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 500px;
-        margin-bottom: 40px;
-    }
-`
-
-
-const MainImg = styled.img`
-    width: 40%;
-    @media (min-width: 320px) and (max-width: 480px) {
-        width: 80%;
-        
-    }
-`
+    height: 650px;
+    border-bottom: 1px solid #DFDFDF;
+`;
 
 const Content = styled.div`
-    margin-bottom: 150px;
-    @media (min-width: 320px) and (max-width: 480px) {
-        margin-bottom: 30px;
-        width: 80%
-    }
-`
+      display: flex;
+    width: 445px;
+    margin-right: 125px;
+    flex-direction: column;
+`;
 
-const BlueSpan = styled.span`
-    color: #3867D6;
-`
+const ButtonView = styled.div`
+    display: flex;
+    margin-top:60px;
+`;
 
-
+const IOSButtonView = styled.div`
+    margin-right: 18px;
+`;
 
 class Body extends Component {
     public render() {
         return (
             <Container>
                 <Content>
-                    <h1><BlueSpan>플러그,</BlueSpan> <br/> 학부모와 교사를 <br/>새롭게 연결합니다.</h1>
+                    <h1>플러그, <br/> 학부모와 선생님을 <br/>새롭게 연결합니다.</h1>
+                    <h3>언제 어디서나, 1년 365일, 몇 명과 함께하든 무료입니다. <br />가입과 로그인 없이 전화번호만 있으면 실시간 그룹채팅 및</h3>
+                    <ButtonView>
+                        <IOSButtonView>
+                            <PWButton
+                                type="primary"
+                                label={"iOS 다운로드"} />
+                        </IOSButtonView>
+                        <PWButton
+                            type="primary"
+                            label={"안드로이드 다운로드"} />
+                    </ButtonView>
                 </Content>
-                <MainImg src={Image.app_mockup} alt="App Image"></MainImg>
+                <img src={Image.logo} alt="" height="500" width="300" />
             </Container>
 
         );

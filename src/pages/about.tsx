@@ -1,7 +1,7 @@
 import React from 'react';
-import { PWHeader } from "../components/header";
-import { DownloadGuideSection, Footer, FucntionIntroSection,  ServiceIntroSection } from "../components/section";
 
+import { PWHeader } from "../components/header";
+import { FucntionIntroSection, ManualSection, ServiceIntroSection } from "../components/section";
 
 const AboutPage = () => {
     return (
@@ -9,8 +9,7 @@ const AboutPage = () => {
             <PWHeader />
             <ServiceIntroSection />
             <FucntionIntroSection />
-            <DownloadGuideSection />
-            <Footer />
+            <ManualSection />
         </div>
     );
 };

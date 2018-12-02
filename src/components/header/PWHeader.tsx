@@ -1,40 +1,48 @@
 import Image from "plug-images";
 import React, { Component } from 'react';
 import styled from 'styled-components';
+
 import { PWButton } from '../button';
 
 
 const Container = styled.header`
-    top: 0;
+    position: fixed;
     display: flex;
-    justify-content: space-between;
-    padding: 22px 0;
+    justify-content: center;
+    padding: 10px 0;
     margin: auto;
-    max-width: 1100px;
-    @media (min-width: 320px) and (max-width: 480px) {
-        width: 90%;
-      }
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,68,.1);
+`;
+
+const AppLogo = styled.img`
+    height: 80px;
 `;
 
 const Content = styled.div`
     width: 1100px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 `;
 
-const AppLogo = styled.img`
-    height: 60px;
+const InviteButton = styled(PWButton)`
+    margin-right: 10px;
 `;
+
+
 
 class PWHeader extends Component {
+
+
     public render() {
         return (
             <Container>
-                <AppLogo src={Image.logo} className="App-logo" alt="logo" />
                 <Content>
-                    <PWButton type="list" label={"이용방법"} />
-                    <PWButton type="list" label={"안내문 받기"} />
+                    <AppLogo src={Image.logo} className="App-logo" alt="logo" />
+                    <InviteButton type="secondary" label={"학부모 초대장"} />
                 </Content>
             </Container>
         );
