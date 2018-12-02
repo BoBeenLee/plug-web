@@ -23,7 +23,7 @@ const Text = styled.p`
     color: #fff;
 `
 
-class footer extends Component {
+class Footer extends Component {
     public render() {
         return (
             <Container>
@@ -37,4 +37,4 @@ class footer extends Component {
     }
 }
 
-export default footer;
+export default Footer;

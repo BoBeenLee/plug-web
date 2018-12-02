@@ -1,0 +1,13 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ],
+  "rules": {
+    "block-no-empty": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "block-closing-brace-newline-before": null,
+    "indentation": null
+  }
+}

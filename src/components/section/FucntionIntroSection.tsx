@@ -1,6 +1,7 @@
+import images from 'plug-images';
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import images from 'plug-images';
+
 
 const Container = styled.div`
     display: flex;
@@ -42,8 +43,7 @@ const ContentItem = styled.section`
         width: 75%;
         align-items: center;
         padding: 24px 30px;;
-        };
-    };
+        }
 `
 
 const ContentItemReversed = styled.section`
@@ -57,9 +57,9 @@ const ContentItemReversed = styled.section`
         justify-content: center;
         width: 75%;
         align-items: center;
-        padding: 24px 30px;;
-       };
-    };
+        padding: 24px 30px;
+       }
+
 `
 
 const UserReview = styled.div`
@@ -104,15 +104,15 @@ const Break = styled.br`
 `
 
 
-class Body2 extends Component {
+class FucntionIntroSection extends Component {
     public render() {
         return (
             <Container>
-{/* ContentHeader */}
+
                 <ContentHeader><h2>플러그로 달라진 연결을 경험해보세요.</h2></ContentHeader> 
-{/* ContentArea */}
+
                 <ContentArea>
-{/* First Item */}
+
                     <ContentItem>
                         <img src={images.function_1} alt="" width="90%"/>
                         <UserReview>
@@ -123,7 +123,7 @@ class Body2 extends Component {
                             <ContentText>"늦은 밤 선생님께 보내는 메시지, 눈치보지 않고 <Break/>예약 메시지를 보낼 수 있었어요."</ContentText>
                         </UserReview>
                     </ContentItem>
-{/* Second Item - Reversed */}
+
                     <ContentItemReversed>
                         <UserReview>
                             <UserInfo>
@@ -135,7 +135,7 @@ class Body2 extends Component {
                         </UserReview>
                             <img src={images.function_2} alt="" width="90%" height="208" />
                     </ContentItemReversed>
-{/* Third Item */}
+
                     <ContentItem>
                         <img src={images.function_3} alt="" width="90%" height="273" />
                         <UserReview>
@@ -153,4 +153,4 @@ class Body2 extends Component {
     }
 }
 
-export default Body2;
+export default FucntionIntroSection;

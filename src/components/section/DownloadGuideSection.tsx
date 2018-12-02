@@ -1,6 +1,6 @@
+import Image from "plug-images";
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Image from "plug-images";
 
 const Container = styled.div`
     display: flex;
@@ -14,7 +14,7 @@ const Container = styled.div`
 `
 
 const TextBox = styled.div`
-    @media (min-width: 320px) and (max-width: 480px) { {
+    @media (min-width: 320px) and (max-width: 480px) {
         width: 75%;
         text-align: center;    
     }
@@ -32,12 +32,12 @@ const Button = styled.img`
     &:hover{
         transform: scale(1.05, 1.05);
     }
-    @media (min-width: 320px) and (max-width: 480px) { {
+    @media (min-width: 320px) and (max-width: 480px) {
         height: 70%;
     }
 `
 
-class body4 extends Component {
+class DownloadGuideSection extends Component {
     public render() {
         return (
             <Container>
@@ -55,4 +55,4 @@ class body4 extends Component {
     }
 }
 
-export default body4;
+export default DownloadGuideSection;
