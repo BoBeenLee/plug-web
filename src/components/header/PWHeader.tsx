@@ -11,6 +11,9 @@ const Container = styled.header`
     padding: 22px 0;
     margin: auto;
     max-width: 1100px;
+    @media (min-width: 320px) and (max-width: 480px) {
+        width: 90%;
+      }
 `;
 
 const Content = styled.div`

@@ -1,6 +1,7 @@
 import React from 'react';
 import { PWHeader } from "../components/header";
-import { FucntionIntroSection, ServiceIntroSection, DownloadGuideSection, Footer } from "../components/section";
+import { DownloadGuideSection, Footer, FucntionIntroSection,  ServiceIntroSection } from "../components/section";
+
 
 const AboutPage = () => {
     return (

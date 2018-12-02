@@ -11,11 +11,31 @@ const Container = styled.section`
     margin: auto;
     max-width: 1100px;
     height: 700px;
-`;
+    /* Mobile Device */
+    @media (min-width: 320px) and (max-width: 480px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+`
+
+
+const MainImg = styled.img`
+    width: 40%;
+    @media (min-width: 320px) and (max-width: 480px) {
+        width: 80%;
+        
+    }
+`
 
 const Content = styled.div`
     margin-bottom: 150px;
-`;
+    @media (min-width: 320px) and (max-width: 480px) {
+        margin-bottom: 30px;
+        width: 80%
+    }
+`
 
 const BlueSpan = styled.span`
     color: #3867D6;
@@ -30,7 +50,7 @@ class Body extends Component {
                 <Content>
                     <h1><BlueSpan>플러그,</BlueSpan> <br/> 학부모와 교사를 <br/>새롭게 연결합니다.</h1>
                 </Content>
-                <img src={Image.app_mockup} alt="Mockup_image" height="600px"/>
+                <MainImg src={Image.app_mockup} alt="App Image"></MainImg>
             </Container>
 
         );
