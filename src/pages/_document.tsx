@@ -9,7 +9,7 @@ injectGlobal`
   @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
   
   * { 
-    font-family: SpoqaHanSans;
+    font-family: 'Spoqa Han Sans', 'san-serif';
     color: #4A4A4A;
   }
 

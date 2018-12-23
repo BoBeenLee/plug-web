@@ -1,12 +1,12 @@
 import React from 'react';
 import { PWHeader } from "../components/header";
-import { DownloadGuideSection, Footer, FucntionIntroSection,  ServiceIntroSection } from "../components/section";
+import { DownloadGuideSection, Footer, FucntionIntroSection, ServiceIntroSection } from "../components/section";
 
 
 const AboutPage = () => {
     return (
         <div>
-            <PWHeader />
+            <PWHeader activePathname="/about" />
             <ServiceIntroSection />
             <FucntionIntroSection />
             <DownloadGuideSection />

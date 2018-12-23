@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 
-type ButtonType = "primary" | "secondary" | "list";
+type ButtonType = "primary" | "secondary" | "list" | "listtab";
 
 interface IProps {
-    classNames?: string;
+    active?: boolean;
+    className?: string;
     label: string;
     type: ButtonType;
     onClick?: () => void;
@@ -48,31 +49,42 @@ const SecondaryButton = styled.button`
     }
   `;
 
-const ListButton = styled.li`
+
+const ActiveCSS = css`
+    font-weight: 600;
+`;
+
+const ListButton = styled.li.attrs<{ active: boolean }>({})`
     all: unset;
-    font-size: 16px;
+    font-size: 14px;
     color: #3867D6;
     cursor: pointer;
     margin-left:40px;
+    ${({ active }) => active ? ActiveCSS : ``}
     &:hover{
         transform: scale(1.05, 1.05);
     }
     &:active{
-        font-weight: 600;
+        ${ActiveCSS}
     }
   `
+
+const ListTabButton = styled(ListButton)`
+    color: #4A4A4A;
+  `;
 
 const BUTTON_TYPE_COMPONENT_MAP = new Map<ButtonType, React.ReactNode>()
     .set("primary", PrimaryButton)
     .set("secondary", SecondaryButton)
-    .set("list", ListButton);
+    .set("list", ListButton)
+    .set("listtab", ListTabButton);
 
 export class PWButton extends Component<IProps> {
     public render() {
-        const { classNames, type, label, onClick } = this.props;
+        const { active, className, type, label, onClick } = this.props;
         const TargetComponent: any = BUTTON_TYPE_COMPONENT_MAP.get(type);
         return (
-            <TargetComponent className={classNames} onClick={onClick}>{label}</TargetComponent>
+            <TargetComponent className={className} active={active} onClick={onClick}>{label}</TargetComponent>
         );
     }
 }

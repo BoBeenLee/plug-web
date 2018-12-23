@@ -5,6 +5,10 @@ import styled from "styled-components";
 import { Router } from "../../../routes";
 import { PWButton } from "../button";
 
+interface IProps {
+  activePathname: string;
+}
+
 const Container = styled.header`
   top: 0;
   display: flex;
@@ -28,18 +32,23 @@ const AppLogo = styled.img`
   height: 60px;
 `;
 
-class PWHeader extends Component {
+class PWHeader extends Component<IProps> {
   public render() {
+    const { activePathname } = this.props;
     return (
       <Container>
         <AppLogo src={Image.logo} className="App-logo" alt="logo" />
         <Content>
           <PWButton
+            key="manual"
+            active={new RegExp(/\/manual\/*\w+/g).test(activePathname)}
             type="list"
             label={"이용방법"}
             onClick={this.navigateToServiceManual}
           />
           <PWButton
+            key="guide"
+            active={activePathname === "/guide"}
             type="list"
             label={"안내문 받기"}
             onClick={this.navigateToGuideDownload}
@@ -50,11 +59,11 @@ class PWHeader extends Component {
   }
 
   private navigateToServiceManual = () => {
-    Router.pushRoute("/manual");
+    Router.pushRoute("/manual/teacher");
   };
 
   private navigateToGuideDownload = () => {
-    // NOTHING
+    Router.pushRoute("/guide");
   };
 }
 
