@@ -70,6 +70,7 @@ const ListButton = styled.li.attrs<{ active: boolean }>({})`
 const ListTabButton = styled(ListButton)`
   color: #4a4a4a;
   padding: 10px 0;
+  ${({ active }) => (active ? ActiveCSS : ``)}
 `;
 
 const BUTTON_TYPE_COMPONENT_MAP = new Map<ButtonType, React.ReactNode>()

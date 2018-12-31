@@ -89,6 +89,7 @@ const TeacherContentMap = new Map<NumberType, IContentData>()
 export default class Teacher extends React.Component<IProps> {
   public render() {
     const { url } = this.props;
+    const selectedId = _.get(url, ["query", "id"], "1");
 
     return (
       <Container>
@@ -99,7 +100,7 @@ export default class Teacher extends React.Component<IProps> {
             <select onChange={this.onManualSelected}>
               {_.map(this.contentKeys(), (key: NumberType) => {
                 const ContentData = TeacherContentMap.get(key);
-                return <option value={key}>{ContentData.name}</option>;
+                return <option selected={selectedId === key} value={key}>{ContentData.name}</option>;
               })}
             </select>
           </DropDown>
@@ -107,9 +108,9 @@ export default class Teacher extends React.Component<IProps> {
           <Aside>
             {_.map(this.contentKeys(), (key: NumberType) => {
               const ContentData = TeacherContentMap.get(key);
-
               return (
                 <PWButton
+                  active={selectedId === key}
                   label={ContentData.name}
                   type="listtab"
                   onClick={_.partial(this.onManualClick, key)}

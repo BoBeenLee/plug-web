@@ -30,6 +30,7 @@ const Content = styled.div`
 
 const AppLogo = styled.img`
   height: 60px;
+  cursor: pointer;
 `;
 
 class PWHeader extends Component<IProps> {
@@ -37,7 +38,7 @@ class PWHeader extends Component<IProps> {
     const { activePathname } = this.props;
     return (
       <Container>
-        <AppLogo src={Image.logo} className="App-logo" alt="logo" />
+        <AppLogo src={Image.logo} className="App-logo" alt="logo" onClick={this.navigateToHome} />
         <Content>
           <PWButton
             key="manual"
@@ -56,6 +57,10 @@ class PWHeader extends Component<IProps> {
         </Content>
       </Container>
     );
+  }
+
+  private navigateToHome = () => {
+    Router.pushRoute("/about");
   }
 
   private navigateToServiceManual = () => {
