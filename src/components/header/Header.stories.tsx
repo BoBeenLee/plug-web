@@ -11,5 +11,5 @@ const Container = styled.div`
 storiesOf("Header", module)
     .addDecorator(storyFunc => <Container>{storyFunc()}</Container>)
     .add("PWHeader", () => (
-        <PWHeader />
+        <PWHeader activePathname="/about" />
     ));

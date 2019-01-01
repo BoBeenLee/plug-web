@@ -6,8 +6,16 @@ const routers = new Routes()
     pattern: "/about"
   })
   .add({
-    name: "serviceManual",
-    pattern: "/service/manual"
+    name: "manual/teacher",
+    pattern: "/manual/teacher"
+  })
+  .add({
+    name: "manual/parent",
+    pattern: "/manual/parent"
+  })
+  .add({
+    name: "guide",
+    pattern: "/guide"
   });
 
 module.exports = routers;

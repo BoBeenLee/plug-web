@@ -9,7 +9,7 @@ injectGlobal`
   @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
   
   * { 
-    font-family: SpoqaHanSans;
+    font-family: 'Spoqa Han Sans', 'san-serif';
     color: #4A4A4A;
   }
 
@@ -46,7 +46,15 @@ injectGlobal`
       line-height: 28px;
     }
   }
+  ol li {
+    line-height: 2.0;
+  }
 
+  mark {
+    display: inline-block; 
+    height: .5em;
+    line-height: .1em;
+  }
   html, body {
     margin: 0;
     padding: 0;
@@ -84,9 +92,8 @@ injectGlobal`
 export default class MyDocument extends Document<any> {
   public static getInitialProps(context) {
     const sheet = new ServerStyleSheet();
-    const page = context.renderPage(
-      (App: any) => (props: any) =>
-        sheet.collectStyles(<App {...props} />)
+    const page = context.renderPage((App: any) => (props: any) =>
+      sheet.collectStyles(<App {...props} />)
     );
     const styleTags = sheet.getStyleElement();
     return { ...page, styleTags };
@@ -117,10 +124,7 @@ export default class MyDocument extends Document<any> {
           content="minimal-ui, initial-scale=1.0, width=device-width, user-scalable=no"
         />
         <meta name="keywords" content="" />
-        <meta
-          name="description"
-          content="plug"
-        />
+        <meta name="description" content="plug" />
       </React.Fragment>
     );
   };
