@@ -17,7 +17,8 @@
     "start:storybook": "start-storybook -p 6006",
     "deploy:storybook": "storybook-to-ghpages",
     "now:dev": "now && now alias",
-    "test": "jest"
+    "test": "jest",
+    "export": "npm run build:next && next export ./src"
   },
   "author": "plug",
   "license": "ISC",
