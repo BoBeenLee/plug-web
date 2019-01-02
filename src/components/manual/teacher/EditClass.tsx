@@ -1,11 +1,22 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import images from "../../../assets/images";
+
+const H3 = styled.h3`
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+`;
+
+const Img = styled.img`
+  width: 100%;
+`;
 
 class EditClass extends Component {
   public render() {
     return (
       <div>
-        <h3>클래스 편집</h3>
+        <H3>클래스 편집</H3>
         <br />
 
         <ol>
@@ -23,7 +34,7 @@ class EditClass extends Component {
             </mark>
             중 편집하고 싶은 클래스를 선택합니다.
           </li>
-          <img src={images.guide_editClass_1} alt="" width="620px" />
+          <Img src={images.guide_editClass_1} alt="" width="620px" />
 
           <br />
           <li>
@@ -47,7 +58,7 @@ class EditClass extends Component {
             </mark>
             을 선택하면 삭제 버튼이 나옵니다.
           </li>
-          <img src={images.guide_editClass_2} alt="" width="620px" />
+          <Img src={images.guide_editClass_2} alt="" width="" />
           <li>
             클래스 이름 변경 화면에서 이름을 변경하고{" "}
             <mark>
@@ -62,7 +73,7 @@ class EditClass extends Component {
             </mark>
             버튼을 선택하면 해당 멤버를 삭제합니다.
           </li>
-          <img src={images.guide_editClass_3} alt="" width="620px" />
+          <Img src={images.guide_editClass_3} alt="" width="" />
         </ol>
       </div>
     );

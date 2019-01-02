@@ -1,13 +1,24 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import images from "../../../assets/images";
+
+const H3 = styled.h3`
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+`;
+
+const Img = styled.img`
+  width: 100%;
+`;
 
 class AddClass extends Component {
   public render() {
     return (
       <div>
-        <h3>클래스에 초대하기</h3>
-        <br />
-
+        <H3>
+          클래스에 초대하기 <br />{" "}
+        </H3>
         <ol>
           <li>클래스를 만들면 클래스 초대코드가 생성됩니다.</li>
           <li>
@@ -30,7 +41,7 @@ class AddClass extends Component {
               </li>
             </ul>
           </li>
-          <img src={images.guide_addClass_1} alt="" width="620px" />
+          <Img src={images.guide_addClass_1} alt="" width="" />
 
           <br />
           <li>학부모님이 초대코드를 입력하면 해당 클래스에 가입됩니다.</li>
@@ -38,7 +49,7 @@ class AddClass extends Component {
             <li>학부모님은 전달 받은 초대코드를 입력합니다.</li>
             <li>자녀 이름을 입력하여 클래스 가입을 완료합니다.</li>
           </ul>
-          <img src={images.guide_addClass_2} alt="" width="620px" />
+          <Img src={images.guide_addClass_2} alt="" width="" />
         </ol>
       </div>
     );

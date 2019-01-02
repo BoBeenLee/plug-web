@@ -1,12 +1,24 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import images from "../../../assets/images";
+
+const H3 = styled.h3`
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+`;
+
+const Img = styled.img`
+  width: 100%;
+`;
 
 class OfficeHourSetting extends Component {
   public render() {
     return (
       <div>
-        <h3>근무시간 설정</h3>
-        <br />
+        <H3>
+          근무시간 설정 <br />{" "}
+        </H3>
 
         <ol>
           <li>
@@ -25,7 +37,7 @@ class OfficeHourSetting extends Component {
             <br />
             *플러그 오프 설정이 꺼져 있는 상태에서는 플러그 오프 설정을 켭니다.
           </li>
-          <img src={images.guide_officeHourSetting_1} alt="" width="620px" />
+          <Img src={images.guide_officeHourSetting_1} alt="" width="" />
 
           <br />
           <br />
@@ -44,15 +56,13 @@ class OfficeHourSetting extends Component {
             을 선택하여 시간을 선택할 수 있습니다.
             <ul>
               <li>
-                해당 시간에는 학부모님이 메시지를 보낼 때 예약전송을 하도록
-                유도합니다.
+                해당 시간에는 학부모님에게 연락을 받기 어려울 수 있음을
+                안내해드립니다.
               </li>
-              <li>
-                학부모님이 예약 전송을 하지 않더라도 알람이 울리지 않습니다.
-              </li>
+              <li>해당 시간에는 알람이 울리지 않습니다.</li>
             </ul>
           </li>
-          <img src={images.guide_officeHourSetting_2} alt="" width="620px" />
+          <Img src={images.guide_officeHourSetting_2} alt="" width="" />
         </ol>
       </div>
     );

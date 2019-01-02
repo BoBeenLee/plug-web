@@ -1,13 +1,24 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import images from "../../../assets/images";
+
+const H3 = styled.h3`
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+`;
+
+const Img = styled.img`
+  width: 100%;
+`;
 
 class AddOtherClass extends Component {
   public render() {
     return (
       <div>
-        <h3>새로운 클래스 만들기</h3>
-        <br />
-
+        <H3>
+          새로운 클래스 만들기 <br />{" "}
+        </H3>
         <ol>
           <li>
             화면 아래 위치한{" "}
@@ -23,7 +34,7 @@ class AddOtherClass extends Component {
             </mark>
             버튼을 선택합니다.
           </li>
-          <img src={images.guide_AddOtherClass_1} alt="" width="620px" />
+          <Img src={images.guide_AddOtherClass_1} alt="" width="" />
 
           <br />
           <li>
@@ -35,7 +46,7 @@ class AddOtherClass extends Component {
             <br />
             초대코드를 학부모님들에게 전달하여 클래스에 초대합니다.
           </li>
-          <img src={images.guide_AddOtherClass_2} alt="" width="620px" />
+          <Img src={images.guide_AddOtherClass_2} alt="" width="" />
         </ol>
       </div>
     );
