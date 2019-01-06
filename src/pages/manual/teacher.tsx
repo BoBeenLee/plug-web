@@ -49,11 +49,20 @@ const Aside = styled.div`
 const DropDown = styled.div`
   display: none;
   @media (min-width: 320px) and (max-width: 480px) {
+    position: relative;
     display: block;
     width: 90%;
+    &:after {
+      content: "▼";
+      padding-top: 12px;
+      position: absolute;
+      right: -10px;
+      top: 0;
+      z-index: 1;
+      text-align: center;
+    }
   }
 `;
-
 const Select = styled.select`
   all: unset;
   width: 100%;
@@ -62,7 +71,7 @@ const Select = styled.select`
   font-weight: 800;
   padding: 8px;
   &:focus {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #3867d6;
     box-shadow: 1px;
   }
 `;
