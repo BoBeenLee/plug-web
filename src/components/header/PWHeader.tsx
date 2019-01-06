@@ -38,7 +38,12 @@ class PWHeader extends Component<IProps> {
     const { activePathname } = this.props;
     return (
       <Container>
-        <AppLogo src={Image.logo} className="App-logo" alt="logo" onClick={this.navigateToHome} />
+        <AppLogo
+          src={Image.logo}
+          className="App-logo"
+          alt="logo"
+          onClick={this.navigateToHome}
+        />
         <Content>
           <PWButton
             key="manual"
@@ -60,8 +65,8 @@ class PWHeader extends Component<IProps> {
   }
 
   private navigateToHome = () => {
-    Router.pushRoute("/about");
-  }
+    Router.pushRoute("/");
+  };
 
   private navigateToServiceManual = () => {
     Router.pushRoute("/manual/teacher");
