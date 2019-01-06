@@ -1,20 +1,18 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import { PWHeader } from "../components/header";
+import { DownloadGuideSection, Footer, FucntionIntroSection, ServiceIntroSection } from "../components/section";
 
-import Logo from "../components/Logo";
 
-import env from "../configs/environment";
+const AboutPage = () => {
+    return (
+        <div>
+            <PWHeader activePathname="/about" />
+            <ServiceIntroSection />
+            <FucntionIntroSection />
+            <DownloadGuideSection />
+            <Footer />
+        </div>
+    );
+};
 
-const Container = styled.div``;
-
-export default class Index extends React.Component {
-    public render() {
-        return (
-            <Container>
-                <Logo />
-                hello world
-                <div>Hello World{env.NODE_ENV}</div>
-            </Container>
-        );
-    }
-}
+export default AboutPage;

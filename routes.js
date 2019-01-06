@@ -2,10 +2,6 @@ const Routes = require("next-routes");
 
 const routers = new Routes()
   .add({
-    name: "about",
-    pattern: "/about"
-  })
-  .add({
     name: "manual/teacher",
     pattern: "/manual/teacher"
   })
