@@ -1,13 +1,25 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import images from "../../../assets/images";
+
+const H3 = styled.h3`
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+`;
+
+const Img = styled.img`
+  width: 100%;
+`;
 
 class Register extends Component {
   public render() {
     return (
       <div>
-        <h3>플러그 가입하기</h3>
-        <br />
-
+        <H3>
+          플러그 가입하기
+          <br />{" "}
+        </H3>
         <ol>
           <li>원하는 회원가입 유형을 선택합니다.</li>
           <li>
@@ -17,7 +29,7 @@ class Register extends Component {
             를 선택합니다.
             <br />
             (학부모의 경우 클래스를 만들 수 없습니다.)
-            <img src={images.guide_register_1} alt="" height="500px" />
+            <Img src={images.guide_register_1} alt="" width="" />
           </li>
           <li>
             <mark>
@@ -31,7 +43,7 @@ class Register extends Component {
           </li>
           <li>이름 입력란에 본인의 이름을 입력합니다.</li>
           <li>학급 이름 입력하고 학년도를 선택하여 클래스를 만듭니다.</li>
-          <img src={images.guide_register_2} alt="" height="500px" />
+          <Img src={images.guide_register_2} alt="" width="" />
         </ol>
       </div>
     );

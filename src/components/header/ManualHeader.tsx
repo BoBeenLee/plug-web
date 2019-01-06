@@ -14,6 +14,21 @@ const Container = styled.header`
   max-width: 1100px;
   @media (min-width: 320px) and (max-width: 480px) {
     width: 90%;
+    display: flex;
+    align-items: center;
+  }
+`;
+
+const ButtonArea = styled.div`
+  @media (min-width: 320px) and (max-width: 480px) {
+  }
+`;
+
+const UserTypeButton = styled(PWButton)`
+  @media (min-width: 320px) and (max-width: 480px) {
+    &:second-child {
+      margin-left: 0;
+    }
   }
 `;
 
@@ -27,20 +42,20 @@ class ManualHeader extends React.Component<IProps> {
     return (
       <Container>
         <h2>플러그 이용방법</h2>
-        <div>
-          <PWButton
+        <ButtonArea>
+          <UserTypeButton
             active={activePathname === "/manual/teacher"}
             label="선생님"
             type="listtab"
             onClick={this.navigateToTeacher}
           />
-          <PWButton
+          <UserTypeButton
             active={activePathname === "/manual/parent"}
             label="학부모님"
             type="listtab"
             onClick={this.navigateToParent}
           />
-        </div>
+        </ButtonArea>
       </Container>
     );
   }

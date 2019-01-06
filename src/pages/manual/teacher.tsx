@@ -28,7 +28,9 @@ const Section = styled.div`
   margin: auto;
   max-width: 1100px;
   @media (min-width: 320px) and (max-width: 480px) {
-    width: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -39,18 +41,40 @@ const Aside = styled.div`
   min-width: 200px;
   background-color: #f9f9f9;
   flex-direction: column;
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const DropDown = styled.div`
   display: none;
   @media (min-width: 320px) and (max-width: 480px) {
     display: block;
+    width: 90%;
+  }
+`;
+
+const Select = styled.select`
+  all: unset;
+  width: 100%;
+  border-bottom: 2px solid gray;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 8px;
+  &:focus {
+    border-bottom: 2px solid blue;
+    box-shadow: 1px;
   }
 `;
 
 const Content = styled.div`
   width: 800px;
   padding: 20px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    position: relative;
+    width: 100%;
+    left: -10%;
+  }
 `;
 
 type NumberType = "1" | "2" | "3" | "4" | "5" | "6";
@@ -97,12 +121,16 @@ export default class Teacher extends React.Component<IProps> {
         <ManualHeader activePathname={url.pathname} />
         <Section>
           <DropDown>
-            <select onChange={this.onManualSelected}>
+            <Select onChange={this.onManualSelected}>
               {_.map(this.contentKeys(), (key: NumberType) => {
                 const ContentData = TeacherContentMap.get(key);
-                return <option selected={selectedId === key} value={key}>{ContentData.name}</option>;
+                return (
+                  <option selected={selectedId === key} value={key}>
+                    {ContentData.name}
+                  </option>
+                );
               })}
-            </select>
+            </Select>
           </DropDown>
 
           <Aside>
