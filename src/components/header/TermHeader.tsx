@@ -6,6 +6,8 @@ import { Router } from "../../../routes";
 const Container = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 `;
 
 const Link = styled.a``;
