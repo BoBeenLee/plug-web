@@ -57,7 +57,7 @@ class GuidePageContents extends Component {
               <br />
               다운로드 할 수 있습니다.
             </p>
-            <PWButton key="guide" type="primary" label={"한글파일 다운로드"} />
+            <PWButton key="guide" type="primary" label={"한글파일 다운로드"} onClick={this.downloadGuideFile} />
           </div>
         </DownloadTextArea>
 
@@ -120,6 +120,9 @@ class GuidePageContents extends Component {
         </Aside>
       </ContentArea>
     );
+  }
+  private downloadGuideFile = () => {
+    window.location.href = "https://s3.ap-northeast-2.amazonaws.com/plug-data/%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3_%E1%84%92%E1%85%A1%E1%86%A8%E1%84%87%E1%85%AE%E1%84%86%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A1%E1%86%BC.hwp";
   }
 }
 
