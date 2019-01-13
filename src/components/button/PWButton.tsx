@@ -23,6 +23,7 @@ const PrimaryButton = styled.button`
   border-radius: 4px;
   height: 50px;
   margin: 0;
+  cursor: pointer;
   &:hover {
     box-shadow: 0 3px 20px 2px rgba(107, 107, 107, 0.5);
     transform: scale(1.05, 1.05);

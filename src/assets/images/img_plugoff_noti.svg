@@ -1,33 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="380px" height="208px" viewBox="0 0 380 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+<svg width="380px" height="320px" viewBox="0 0 380 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
     <title>resorces/img_plugoff_noti@2x</title>
     <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="30" width="379" height="290"></rect>
+    </defs>
     <g id="resorces/img_plugoff_noti" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="img_plugoff_noti">
-            <path d="M1.5,206.5 L378.5,206.5 L378.5,8 C378.5,4.41014913 375.589851,1.5 372,1.5 L8,1.5 C4.41014913,1.5 1.5,4.41014913 1.5,8 L1.5,206.5 Z" id="BG" stroke="#DEE0E5" stroke-width="3" fill="#FFFFFF"></path>
-            <text id="박태준-선생님,-플러그-오프-시간에" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="22" font-weight="normal" fill="#4A4A4A">
-                <tspan x="20" y="121">박태준</tspan>
-                <tspan x="77.09" y="121" font-family="SFProDisplay-Regular, SF Pro Display"> </tspan>
-                <tspan x="81.6017187" y="121">선생님</tspan>
-                <tspan x="138.691719" y="121" font-family="SFProDisplay-Regular, SF Pro Display">, </tspan>
-                <tspan x="20" y="149" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-weight="bold">플러그</tspan>
-                <tspan x="77.09" y="149" font-family="SFProDisplay-Bold, SF Pro Display" font-weight="bold"> </tspan>
-                <tspan x="81.4405859" y="149" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-weight="bold">오프</tspan>
-                <tspan x="119.500586" y="149" font-family="SFProDisplay-Regular, SF Pro Display"> </tspan>
-                <tspan x="124.012305" y="149">시간에</tspan>
-                <tspan x="181.102305" y="149" font-family="SFProDisplay-Regular, SF Pro Display"> </tspan>
-                <tspan x="185.614023" y="149" font-family="SFProDisplay-Bold, SF Pro Display" font-weight="bold">4</tspan>
-                <tspan x="199.868906" y="149" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-weight="bold">명</tspan>
-                <tspan x="218.898906" y="149">이</tspan>
-                <tspan x="237.928906" y="149" font-family="SFProDisplay-Regular, SF Pro Display"></tspan>
-                <tspan x="20" y="177">메시지를</tspan>
-                <tspan x="96.12" y="177" font-family="SFProDisplay-Regular, SF Pro Display"> </tspan>
-                <tspan x="100.631719" y="177">보냈습니다</tspan>
-                <tspan x="195.781719" y="177" font-family="SFProDisplay-Regular, SF Pro Display">.</tspan>
-            </text>
-            <path d="M8,0 L372,0 C376.418278,-8.11624501e-16 380,3.581722 380,8 L380,30 L0,30 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Rectangle" fill="#DEE0E5"></path>
-            <rect id="Rectangle-Copy-4" fill="#DEE0E5" x="20" y="47" width="72" height="29" rx="4"></rect>
+            <path d="M1.5,318.5 L378.5,318.5 L378.5,8 C378.5,4.41014913 375.589851,1.5 372,1.5 L8,1.5 C4.41014913,1.5 1.5,4.41014913 1.5,8 L1.5,318.5 Z" id="BG" stroke="#DEE0E5" stroke-width="3" fill="#FFFFFF"></path>
+            <g id="박태준-선생님,-플러그-오프-시간에-+-Rectangle-+-Rectangle-Copy-4-+-Group-+-Group-Copy-2-Mask">
+                <path d="M8,0 L372,0 C376.418278,-8.11624501e-16 380,3.581722 380,8 L380,30 L0,30 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Rectangle" fill="#DEE0E5"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <text id="박태준-선생님,-플러그-오프-시간에" mask="url(#mask-2)" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="22" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="20" y="121">박태준</tspan>
+                    <tspan x="77.09" y="121" font-family="SFProDisplay-Regular, SF Pro Display"> </tspan>
+                    <tspan x="81.6017187" y="121">선생님</tspan>
+                    <tspan x="138.691719" y="121" font-family="SFProDisplay-Regular, SF Pro Display">, </tspan>
+                    <tspan x="20" y="149" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-weight="bold">플러그</tspan>
+                    <tspan x="77.09" y="149" font-family="SFProDisplay-Bold, SF Pro Display" font-weight="bold"> </tspan>
+                    <tspan x="81.4405859" y="149" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-weight="bold">오프</tspan>
+                    <tspan x="119.500586" y="149" font-family="SFProDisplay-Regular, SF Pro Display"> </tspan>
+                    <tspan x="124.012305" y="149">시간에</tspan>
+                    <tspan x="181.102305" y="149" font-family="SFProDisplay-Regular, SF Pro Display"> </tspan>
+                    <tspan x="185.614023" y="149" font-family="SFProDisplay-Bold, SF Pro Display" font-weight="bold">4</tspan>
+                    <tspan x="199.868906" y="149" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-weight="bold">명</tspan>
+                    <tspan x="218.898906" y="149">이</tspan>
+                    <tspan x="237.928906" y="149" font-family="SFProDisplay-Regular, SF Pro Display"></tspan>
+                    <tspan x="20" y="177">메시지를</tspan>
+                    <tspan x="96.12" y="177" font-family="SFProDisplay-Regular, SF Pro Display"> </tspan>
+                    <tspan x="100.631719" y="177">보냈습니다</tspan>
+                    <tspan x="195.781719" y="177" font-family="SFProDisplay-Regular, SF Pro Display">.</tspan>
+                </text>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(27.000000, 220.000000)">
+                        <circle id="Oval" fill="#D8D8D8" fill-rule="evenodd" cx="22" cy="22" r="22"></circle>
+                        <circle id="Oval" fill="#A7A7A7" fill-rule="evenodd" cx="6.5" cy="6.5" r="6.5"></circle>
+                        <text id="박세훈-부모님" fill="none" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="16" font-weight="normal" letter-spacing="-0.2584615">
+                            <tspan x="60" y="15" fill="#4A4A4A">박세훈 부모님</tspan>
+                        </text>
+                        <text id="연결초-4-2" fill="none" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="14" font-weight="normal" letter-spacing="-0.2261539">
+                            <tspan x="60" y="34" fill="#8F8F8F">연결초 4-2</tspan>
+                        </text>
+                        <text id="선생님,-체험학습신청서-다음주에-보내" fill="none" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="14" font-weight="normal" letter-spacing="-0.2261539">
+                            <tspan x="60" y="57" fill="#4A4A4A">선생님, 체험학습신청서 다음주에 보내겠습니다.</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-Copy-2" mask="url(#mask-2)">
+                    <g transform="translate(27.000000, 304.000000)">
+                        <circle id="Oval" fill="#D8D8D8" fill-rule="evenodd" cx="22" cy="22" r="22"></circle>
+                        <circle id="Oval" fill="#A7A7A7" fill-rule="evenodd" cx="6.5" cy="6.5" r="6.5"></circle>
+                        <text id="김아람-부모님" fill="none" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="16" font-weight="normal" letter-spacing="-0.2584615">
+                            <tspan x="60" y="15" fill="#4A4A4A">김아람 부모님</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
         </g>
+        <path d="M27.193098,72.9801891 L25,72.9801891 L25,58.0823953 L27.193098,58.0823953 L27.193098,59.1323728 C28.0573454,58.2540854 29.0385439,57.8149482 30.1367229,57.8149482 C31.4428411,57.8149482 32.5182606,58.3036121 33.3630137,59.2809545 C34.220763,60.2516933 34.6496312,61.4766548 34.6496312,62.9558757 C34.6496312,64.4020784 34.224012,65.6072292 33.3727608,66.5713643 C32.5280077,67.5288957 31.4623352,68.0076542 30.1757113,68.0076542 C29.0645361,68.0076542 28.0703416,67.5553099 27.193098,66.6506078 L27.193098,72.9801891 Z M32.4077977,62.9657812 C32.4077977,62.0412681 32.1608736,61.2884616 31.6670179,60.707339 C31.1666642,60.1196129 30.5363579,59.8257542 29.7760801,59.8257542 C28.9703156,59.8257542 28.3172663,60.1097075 27.8169125,60.6776227 C27.3165588,61.2455379 27.0663857,61.9917408 27.0663857,62.9162539 C27.0663857,63.820956 27.3165588,64.567159 27.8169125,65.1548852 C28.3107682,65.729404 28.9605685,66.0166592 29.766333,66.0166592 C30.5266108,66.0166592 31.1536681,65.7261023 31.6475237,65.1449797 C32.1543756,64.5638572 32.4077977,63.837465 32.4077977,62.9657812 Z M39.1625395,51 L39.1625395,67.7303017 L36.9694415,67.7303017 L36.9694415,51 L39.1625395,51 Z M44.1335616,58.0823953 L44.1335616,63.6195407 C44.1335616,65.2176277 44.7541209,66.0166592 45.9952582,66.0166592 C47.2363954,66.0166592 47.8569547,65.2176277 47.8569547,63.6195407 L47.8569547,58.0823953 L50.0500527,58.0823953 L50.0500527,63.669068 C50.0500527,64.4416968 49.9558316,65.108657 49.7673867,65.6699685 C49.5854399,66.171847 49.2702868,66.6241913 48.8219178,67.0270149 C48.0811343,67.6807777 47.1389239,68.0076542 45.9952582,68.0076542 C44.8580906,68.0076542 43.9191291,67.6807777 43.1783456,67.0270149 C42.7234786,66.6241913 42.4018274,66.171847 42.2133825,65.6699685 C42.0314357,65.2209193 41.9404636,64.5539591 41.9404636,63.669068 L41.9404636,58.0823953 L44.1335616,58.0823953 Z M62,67.5024764 C62,67.9581292 61.9853795,68.3592959 61.956138,68.7059883 C61.9268966,69.0526807 61.8862841,69.3580956 61.8342993,69.6222422 C61.6783448,70.3486454 61.3729387,70.9726824 60.9180717,71.4943719 C60.0603224,72.498129 58.8809348,73 57.3798736,73 C56.1127439,73 55.0698144,72.6533128 54.2510537,71.959928 C53.4063007,71.2467321 52.9189504,70.259499 52.7889884,68.998199 L54.9918335,68.998199 C55.0763088,69.4736629 55.2160159,69.8401608 55.4109589,70.0977037 C55.8658259,70.6986373 56.5286223,70.9990995 57.3993678,70.9990995 C59.0043986,70.9990995 59.806902,69.9986593 59.806902,67.9977488 L59.806902,66.6506078 C58.9361565,67.5553099 57.932215,68.0076542 56.7950474,68.0076542 C55.5019254,68.0076542 54.4427509,67.5321975 53.6174921,66.5812697 C52.7857352,65.6171346 52.369863,64.4119838 52.369863,62.9657812 C52.369863,61.5592005 52.7564942,60.3639551 53.5297682,59.380009 C54.3615251,58.3366299 55.4596876,57.8149482 56.8242887,57.8149482 C58.0199392,57.8149482 59.0141337,58.2672925 59.806902,59.1719946 L59.806902,58.0823953 L62,58.0823953 L62,67.5024764 Z M59.8946259,62.9261594 C59.8946259,61.988439 59.6477018,61.2389342 59.1538462,60.6776227 C58.6534924,60.1031038 58.0134391,59.8158487 57.233667,59.8158487 C56.4019101,59.8158487 55.7456118,60.1295181 55.2647524,60.7568663 C54.8293796,61.3181778 54.6116965,62.0445701 54.6116965,62.9360648 C54.6116965,63.8143523 54.8293796,64.534141 55.2647524,65.0954525 C55.7391137,65.7095933 56.395412,66.0166592 57.233667,66.0166592 C58.071922,66.0166592 58.7347183,65.7062916 59.2220759,65.0855471 C59.6704448,64.5242355 59.8946259,63.8044468 59.8946259,62.9261594 Z" id="plug" fill="#DEE0E5"></path>
     </g>
 </svg>

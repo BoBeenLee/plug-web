@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="380px" height="320px" viewBox="0 0 380 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>resorces/img_chatting@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="resorces/img_chatting" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="380" height="320"></rect>
+        <rect id="Rectangle-Copy-5" fill="#E6E6E6" opacity="0.400000006" x="0" y="22" width="380" height="60"></rect>
+        <g id="Group" transform="translate(134.000000, 32.000000)" fill="#4A4A4A" letter-spacing="-0.2584615">
+            <text id="박태순-선생님" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="18" font-weight="bold">
+                <tspan x="8.32761525" y="16">박태순 선생님</tspan>
+            </text>
+            <text id="서원초-5-1-･-플러그-온" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="13" font-weight="normal">
+                <tspan x="0.12096125" y="34">서원초 5-1 </tspan>
+                <tspan x="55.3702692" y="34" font-family="PingFangSC-Regular, PingFang SC">･</tspan>
+                <tspan x="61.6118077" y="34"> 플러그 온</tspan>
+            </text>
+        </g>
+        <g id="Padding-Group-52" transform="translate(14.000000, 109.000000)">
+            <path d="M2,0 L279.4834,0 C288.319956,2.97705044e-14 295.4834,7.163444 295.4834,16 L295.4834,88 C295.4834,96.836556 288.319956,104 279.4834,104 L16,104 C7.163444,104 1.082166e-15,96.836556 0,88 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="Background" fill="#E6E6E6"></path>
+            <text id="안녕하세요,-세훈이-어머님.-오늘-세" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#000000">
+                <tspan x="13" y="24">안녕하세요, 세훈이 어머님. </tspan>
+                <tspan x="13" y="46">오늘 세훈이가 무릎을 다쳐서 보건실에서 </tspan>
+                <tspan x="13" y="68">치료를 받고 괜찮아졌지만 걱정되어 문자</tspan>
+                <tspan x="13" y="90">남깁니다. </tspan>
+            </text>
+        </g>
+        <g id="Padding-Group-52-Copy" transform="translate(69.000000, 230.000000)">
+            <path d="M16,0 L279.4834,0 C288.319956,2.97705044e-14 295.4834,7.163444 295.4834,16 L295.4834,58 C295.4834,59.1045695 294.58797,60 293.4834,60 L16,60 C7.163444,60 1.082166e-15,52.836556 0,44 L0,16 C-1.082166e-15,7.163444 7.163444,1.623249e-15 16,0 Z" id="Background" fill="#4A4A4A"></path>
+            <text id="네-선생님!-저도-살피겠습니다.-신경" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="17" font-weight="normal" line-spacing="22" letter-spacing="-0.408" fill="#FFFFFF">
+                <tspan x="13" y="24">네 선생님! 저도 살피겠습니다. 신경써주셔</tspan>
+                <tspan x="13" y="46">서 감사합니다^^</tspan>
+            </text>
+        </g>
+        <path d="M8,0 L372,0 C376.418278,-8.11624501e-16 380,3.581722 380,8 L380,23 L0,23 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Rectangle-Copy-5" fill="#DEE0E5"></path>
+        <path d="M1.5,318.5 L378.5,318.5 L378.5,8 C378.5,4.41014913 375.589851,1.5 372,1.5 L8,1.5 C4.41014913,1.5 1.5,4.41014913 1.5,8 L1.5,318.5 Z" id="Mask" stroke="#DEE0E5" stroke-width="3"></path>
+    </g>
+</svg>

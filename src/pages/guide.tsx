@@ -1,19 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import { PWHeader } from "../components/header";
+import { GuideHeader, PWHeader } from "../components/header";
+import { GuidePageContents } from "../components/section";
 
 interface IProps {
-    url: any;
+  url: any;
 }
 
 const Container = styled.div``;
 
 export default class Guide extends React.Component<IProps> {
-    public render() {
-        const { url } = this.props;
-        return (
-            <Container>
-                <PWHeader activePathname={url.pathname} />
-                guide</Container>);
-    }
+  public render() {
+    const { url } = this.props;
+    return (
+      <Container>
+        <PWHeader activePathname={url.pathname} />
+        <GuideHeader />
+        <GuidePageContents />
+      </Container>
+    );
+  }
 }

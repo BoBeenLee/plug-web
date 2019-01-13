@@ -4,7 +4,7 @@ const images = {
   avatar_teacher: require("./img_avatar_teacher.svg"),
   btn_app_store: require("./btn_app_store.svg"),
   btn_google_play: require("./btn_google_play.svg"),
-  function_1: require("./img_msg_reserv_popup.svg"),
+  function_1: require("./img_chatting.svg"),
   function_2: require("./img_plugoff_noti.svg"),
   function_3: require("./img_chat_list.svg"),
   guide_AddOtherClass_1: require("./img_AddOtherClass_1.png"),
