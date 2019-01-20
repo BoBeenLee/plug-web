@@ -5,9 +5,8 @@ import { injectGlobal } from "styled-components";
 
 // tslint:disable-next-line:no-unused-expression
 injectGlobal`
-  
   @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-  
+
   * { 
     font-family: 'Spoqa Han Sans', 'san-serif';
     color: #4A4A4A;
@@ -125,6 +124,7 @@ export default class MyDocument extends Document<any> {
         />
         <meta name="keywords" content="" />
         <meta name="description" content="plug" />
+        <link rel="stylesheet" href="https://unpkg.com/react-tabs@2/style/react-tabs.css" />
       </React.Fragment>
     );
   };

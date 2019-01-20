@@ -37,7 +37,7 @@ class Footer extends Component {
         return (
             <Container>
                 <Term>
-                    <Link href="#" onClick={this.navigateUsageTerm}>이용약관</Link><Link href="#" onClick={this.navigatePrivateTerm}>개인정보취급방침</Link>
+                    <Link href="#" onClick={this.navigateTerm}>이용약관 및 개인정보취급방침</Link>
                 </Term>
                 <Text>이용문의: plugcs@gmail.com</Text>
                 <div>
@@ -47,14 +47,9 @@ class Footer extends Component {
         );
     }
 
-    private navigateUsageTerm = () => {
-        Router.replaceRoute(`/usageTerm`);
+    private navigateTerm = () => {
+        Router.pushRoute(`/privateTerm`);
     };
-
-    private navigatePrivateTerm = () => {
-        Router.replaceRoute(`/privateTerm`);
-    };
-
 }
 
 export default Footer;
