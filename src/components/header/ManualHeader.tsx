@@ -41,7 +41,7 @@ class ManualHeader extends React.Component<IProps> {
     const { activePathname } = this.props;
     return (
       <Container>
-        <h2>플러그 이용방법</h2>
+        <h2>이용방법</h2>
         <ButtonArea>
           <UserTypeButton
             active={activePathname === "/manual/teacher"}
