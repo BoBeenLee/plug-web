@@ -57,7 +57,12 @@ class GuidePageContents extends Component {
               <br />
               다운로드 할 수 있습니다.
             </p>
-            <PWButton key="guide" type="primary" label={"한글파일 다운로드"} onClick={this.downloadGuideFile} />
+            <PWButton
+              key="guide"
+              type="primary"
+              label={"한글파일 다운로드"}
+              onClick={this.downloadGuideFile}
+            />
           </div>
         </DownloadTextArea>
 
@@ -68,7 +73,7 @@ class GuidePageContents extends Component {
               <br />*
               <i>
                 <mark>
-                  <b>교실 번호</b>
+                  <b>학교전화번호</b>
                 </mark>{" "}
                 와{" "}
                 <mark>
@@ -92,9 +97,9 @@ class GuidePageContents extends Component {
               <mark>
                 <b>(교실 번호)</b>
               </mark>
-              를 누르시면 연결이 가능합니다. 휴대전화로 연락이 필요하신 경우
-              플러그 앱을 통해 메시지가 가능합니다. 플러그 앱은 알림장 등 저와
-              학부모님 간의 연락 수단으로 활용될 예정입니다.
+              를 누르시면 연결이 가능합니다. 저에게 연락이 필요한 경우 플러그
+              앱을 통해 메시지가 가능합니다. 플러그 앱은 저와 학부모님 간의 연락
+              수단으로 활용될 예정입니다.
             </p>
             <p>
               <b>플러그 설치 방법</b>
@@ -122,8 +127,9 @@ class GuidePageContents extends Component {
     );
   }
   private downloadGuideFile = () => {
-    window.location.href = "https://s3.ap-northeast-2.amazonaws.com/plug-data/%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3_%E1%84%92%E1%85%A1%E1%86%A8%E1%84%87%E1%85%AE%E1%84%86%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A1%E1%86%BC.hwp";
-  }
+    window.location.href =
+      "https://s3.ap-northeast-2.amazonaws.com/plug-data/%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3_%E1%84%92%E1%85%A1%E1%86%A8%E1%84%87%E1%85%AE%E1%84%86%E1%85%A9%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A2%E1%84%8C%E1%85%A1%E1%86%BC.hwp";
+  };
 }
 
 export default GuidePageContents;
