@@ -75,6 +75,10 @@ class GuidePageContents extends Component {
                 <mark>
                   <b>학교전화번호</b>
                 </mark>{" "}
+                ,
+                <mark>
+                  <b>교실번호</b>
+                </mark>
                 와{" "}
                 <mark>
                   <b>가입코드</b>
@@ -91,11 +95,11 @@ class GuidePageContents extends Component {
             <p>
               저에게 연락이 필요하신 경우,
               <mark>
-                <b>(전화번호)</b>
+                <b>(학교전화번호)</b>
               </mark>
               로 전화주신 후{" "}
               <mark>
-                <b>(교실 번호)</b>
+                <b>(교실번호)</b>
               </mark>
               를 누르시면 연결이 가능합니다. 저에게 메시지를 보내셔야 할 경우
               플러그 앱을 통해 가능합니다. 플러그 앱은 저와 학부모님 간의 연락
