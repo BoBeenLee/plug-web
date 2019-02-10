@@ -134,7 +134,7 @@ export default class Teacher extends React.Component<IProps> {
               {_.map(this.contentKeys(), (key: NumberType) => {
                 const ContentData = TeacherContentMap.get(key);
                 return (
-                  <option selected={selectedId === key} value={key}>
+                  <option key={`t1-${key}`} selected={selectedId === key} value={key}>
                     {ContentData.name}
                   </option>
                 );
@@ -147,6 +147,7 @@ export default class Teacher extends React.Component<IProps> {
               const ContentData = TeacherContentMap.get(key);
               return (
                 <PWButton
+                  key={`t2-${key}`}
                   active={selectedId === key}
                   label={ContentData.name}
                   type="listtab"
