@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import { Router } from "../../../routes";
+import { isMobile } from '../../utils/navigator';
 import { PWButton } from "../button";
 
 interface IProps {
@@ -52,13 +53,13 @@ class PWHeader extends Component<IProps> {
             label={"이용방법"}
             onClick={this.navigateToServiceManual}
           />
-          <PWButton
+          {!isMobile() ? <PWButton
             key="guide"
             active={activePathname === "/guide"}
             type="list"
             label={"안내문 받기"}
             onClick={this.navigateToGuideDownload}
-          />
+          /> : null}
         </Content>
       </Container>
     );
