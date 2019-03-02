@@ -17,25 +17,6 @@ interface IProps {
 
 const Container = styled.div``;
 
-const Header = styled.header`
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #dfdfdf;
-  padding: 22px 0;
-  margin: auto;
-  max-width: 1100px;
-  @media (min-width: 320px) and (max-width: 480px) {
-    width: 90%;
-    display: flex;
-    align-items: center;
-  }
-`;
-
-
-const Title = styled.h2``;
-
 const Section = styled.div`
   top: 0;
   display: flex;
@@ -47,18 +28,6 @@ const Section = styled.div`
     max-width: 90%;
     display: flex;
     flex-direction: column;
-  }
-`;
-
-const Aside = styled.div`
-  display: flex;
-  /* padding: 30px; */
-  padding: 20px 40px 20px 0;
-  min-width: 200px;
-  background-color: #f9f9f9;
-  flex-direction: column;
-  @media (min-width: 320px) and (max-width: 480px) {
-    display: none;
   }
 `;
 
