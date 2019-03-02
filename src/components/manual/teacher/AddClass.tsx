@@ -31,7 +31,7 @@ class AddClass extends Component {
               <li>
                 안내문 양식은 PC에서{" "}
                 <mark>
-                  <b>plug.kr</b>
+                  <b>plugapp.me</b>
                 </mark>{" "}
                 에 접속하여 홈페이지 우측 상단의{" "}
                 <mark>
