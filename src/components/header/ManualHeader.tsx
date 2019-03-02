@@ -3,6 +3,12 @@ import styled from "styled-components";
 import { Router } from "../../../routes";
 import { PWButton } from "../button";
 
+interface IProps {
+  title: string;
+  teacherUri: string;
+  parentUri: string;
+}
+
 const Container = styled.header`
   top: 0;
   display: flex;
@@ -38,19 +44,19 @@ interface IProps {
 
 class ManualHeader extends React.Component<IProps> {
   public render() {
-    const { activePathname } = this.props;
+    const { activePathname, title, teacherUri, parentUri } = this.props;
     return (
       <Container>
-        <h2>이용방법</h2>
+        <h2>{title}</h2>
         <ButtonArea>
           <UserTypeButton
-            active={activePathname === "/manual/teacher"}
+            active={activePathname === teacherUri}
             label="선생님"
             type="listtab"
             onClick={this.navigateToTeacher}
           />
           <UserTypeButton
-            active={activePathname === "/manual/parent"}
+            active={activePathname === parentUri}
             label="학부모님"
             type="listtab"
             onClick={this.navigateToParent}
@@ -61,11 +67,13 @@ class ManualHeader extends React.Component<IProps> {
   }
 
   private navigateToTeacher = () => {
-    Router.replaceRoute("/manual/teacher");
+    const { teacherUri } = this.props;
+    Router.replaceRoute(teacherUri);
   };
 
   private navigateToParent = () => {
-    Router.replaceRoute("/manual/parent");
+    const { parentUri } = this.props;
+    Router.replaceRoute(parentUri);
   };
 }
 

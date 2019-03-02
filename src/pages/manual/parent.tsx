@@ -102,7 +102,11 @@ export default class Parent extends React.Component<IProps> {
     return (
       <Container>
         <PWHeader activePathname={url.pathname} />
-        <ManualHeader activePathname={url.pathname} />
+        <ManualHeader activePathname={url.pathname}
+          title="이용방법"
+          teacherUri="/manual/teacher"
+          parentUri="/manual/parent"
+        />
         <Section>
           <DropDown>
             <Select onChange={this.onManualSelected}>
