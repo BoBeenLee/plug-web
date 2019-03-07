@@ -109,7 +109,7 @@ class GuidePageContents extends Component {
               <b>플러그 설치 방법</b>
               <ol>
                 <li>
-                  플레이스토어 혹은 앱스토어에서 ‘플러그’를 검색 후 앱을
+                  플레이스토어 혹은 앱스토어에서 ‘플러그 교육’을 검색 후 앱을
                   다운로드, 설치합니다.
                 </li>
                 <li>
