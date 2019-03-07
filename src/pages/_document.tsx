@@ -2,6 +2,7 @@ import Document, { Head, Main, NextScript } from "next/document";
 import React from "react";
 import { ServerStyleSheet } from "styled-components";
 import { injectGlobal } from "styled-components";
+import useragent from 'useragent';
 
 // tslint:disable-next-line:no-unused-expression
 injectGlobal`
@@ -90,15 +91,18 @@ injectGlobal`
 
 export default class MyDocument extends Document<any> {
   public static getInitialProps(context) {
+    const { req } = context;
     const sheet = new ServerStyleSheet();
     const page = context.renderPage((App: any) => (props: any) =>
       sheet.collectStyles(<App {...props} />)
     );
+    const ua = useragent.parse(req.headers['user-agent']); // here
     const styleTags = sheet.getStyleElement();
-    return { ...page, styleTags };
+    return { ...page, styleTags, ua };
   }
 
   public render() {
+    const { ua } = this.props;
     return (
       <html>
         <Head>
@@ -106,6 +110,10 @@ export default class MyDocument extends Document<any> {
           {this.renderMetaTags()}
           {this.renderAmplitude()}
           {this.props.styleTags}
+          <script dangerouslySetInnerHTML={{
+            __html: `
+            ${ua.family === 'IE' ? `window.location.href = "./static/guide.html";` : ``}
+          `}} />
         </Head>
         <body>
           <Main />
