@@ -1,0 +1,132 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* { 
+  font-family: 'Spoqa Han Sans', 'san-serif';
+  color: #4A4A4A;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: left;
+  margin: 0 0 12px 0;
+  letter-spacing: 1.2px;
+  line-height: 62px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin: 0;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+ol li {
+  line-height: 2.0;
+}
+
+mark {
+  display: inline-block; 
+  height: .5em;
+  line-height: .1em;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.guide-container {
+    padding: 22px 0;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.guide-header {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.guide-article {
+    
+}
+
+.guide-left-content {
+    display: inline-block;
+    width: 70%;
+    float: left;
+}
+
+.guide-caption {
+    padding: 16px 0px 4px 0px;
+}
+
+.guide-contact-container {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px 0px;
+    background: rgb(255, 255, 255);
+    padding: 30px 50px;
+    margin: 10px 60px 0px 0px;
+}
+
+.guide-right-content {
+    display: inline-block;
+    padding-top: 215px;
+}
+
+.primary-button {
+    font-family: SpoqaHanSans-Bold;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: 18px;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(56, 103, 214);
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 0px;
+}
