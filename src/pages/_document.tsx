@@ -96,7 +96,7 @@ export default class MyDocument extends Document<any> {
     const page = context.renderPage((App: any) => (props: any) =>
       sheet.collectStyles(<App {...props} />)
     );
-    const ua = useragent.parse(req.headers['user-agent']); // here
+    const ua = useragent.parse(_.defaultTo(req.headers['user-agent'], "")); // here
     const styleTags = sheet.getStyleElement();
     return { ...page, styleTags, ua };
   }
