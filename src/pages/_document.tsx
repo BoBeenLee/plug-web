@@ -102,7 +102,7 @@ export default class MyDocument extends Document<any> {
     return (
       <html>
         <Head>
-          <title>plug web</title>
+          <title>플러그</title>
           {this.renderMetaTags()}
           {this.renderAmplitude()}
           {this.props.styleTags}
